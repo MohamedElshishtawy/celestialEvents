@@ -1,0 +1,84 @@
+body{
+    background-image: '../img/fantazy-planet.png';
+}
+nav{
+    position: relative;
+    background-color: black;
+    padding: 10px 0;
+    margin: 0;
+    text-align: center;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    margin-right: -4px;
+    position: relative;
+    padding: 10px;
+    float: revert;
+    border-right: 1px white solid;
+}
+nav a:last-child{
+    border-right: none;
+}
+@keyframes navhover{
+    from{
+        background-color: none;
+        /* color: white; */
+
+    }
+    to{
+        background-color: #ebebeb6b;
+        /* color: black; */
+    }
+}
+nav a:hover{
+    /* background-color: #ebebeb6b;
+    color: black; */
+    animation: navhover .5s forwards;
+}
+
+div{
+    position: relative;
+    width: 70%;
+    left: 15%;
+    background-image: linear-gradient(4deg, #0520fdd4 13%, #8a03f6bd 40%);
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 20px 0;
+    color: white;
+}
+
+.events-table{
+    width: 70%;
+    position: relative;
+    left: 15%;
+    background-image: linear-gradient(4deg, #0520fdd4 13%, #8a03f6bd 40%);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.events-table td, .events-table th{
+    padding: 10px;
+}
+
+.events-table th, .events-table td {
+    border-bottom: 1px black solid;
+    border-right: 1px black solid;
+}
+
+.events-table th:last-child, .events-table td:last-child{
+    border-right: 0;
+}
+
+.events-table tr:hover{
+    animation: table-hover  .3s ease forwards;
+}
+@keyframes table-hover {
+    from{
+
+    }
+    to{
+        background-image: linear-gradient(4deg, #0520fdd4 13%, #8a03f6bd 40%); 
+        color: white
+    }
+}
